@@ -7,6 +7,7 @@ COPY AdGuardHome.yaml /opt/adguardhome/conf/AdGuardHome.yaml
 # Make the entrypoint script executable
 COPY entrypoint.sh /opt/adguardhome/entrypoint.sh
 RUN chmod +x /opt/adguardhome/entrypoint.sh
+RUN chmod +x /opt/adguardhome/AdGuardHome
 
 # 53     : TCP, UDP : DNS
 # 67     :      UDP : DHCP (server)
